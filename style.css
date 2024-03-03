@@ -9,12 +9,7 @@ header {
   height: 15vh;
   border: 2px solid black;
 }
-.logo {
-  width: 12%;
-  position: relative;
-  top: -1.1rem;
-  filter: invert(100%);
-}
+
 nav {
   width: 100%;
   height: 100%;
@@ -29,27 +24,27 @@ nav {
 }
 .main-topbg {
   position: absolute;
-  right: 14rem;
+  right:30vh;
 }
 .main-top1 {
   position: absolute;
-  bottom: 0;
-  right: 10rem;
+  bottom: initial;
+  top: 0;
+  zoom: 1;
+  right: 22vh;
   transform: rotateY(180deg);
 }
 .main-quote {
   position: absolute;
-  top: 10rem;
-  left: 10rem;
+  top: 20vh;
+  left: 20vh;
   color: white;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-size: 3rem;
+  font-size: 6vh;
 }
-.btn1,
-.btn2,
-.btn3 {
-  padding: 2rem 4rem;
+.btn2,.btn1,.btn3{
+  padding:5vh 10vh;
   background-image: url(/assets/bg2.svg);
   background-color: transparent;
   border: none;
@@ -58,8 +53,8 @@ nav {
   background-repeat: no-repeat;
   color: aliceblue;
   cursor: pointer;
-  width: 15rem;
-  font-size: 1rem;
+  width: 30vh;
+  font-size: 2vh;
 }
 .section2,
 .section3 {
@@ -72,17 +67,17 @@ nav {
 }
 .section-container {
   position: absolute;
-  right: 10rem;
-  top: 10rem;
-  width: 25%;
-  height: 60%;
+  right: 22vh;
+  top: 22vh;
+  width: 25vw;
+  height: 60vh;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 2rem;
+  gap: 3vh;
+  /* padding: 2rem; */
   color: white;
   background-color: black;
   font-weight: 700;
@@ -92,8 +87,8 @@ nav {
 }
 
 .section-container-img {
-  width: 40%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
 }
 .section-container-img img {
   width: 100%;
@@ -107,8 +102,8 @@ nav {
 }
 .section2-top1 {
   position: absolute;
-  bottom: 0.5rem;
-  left: 4rem;
+  bottom: 0vh;
+  left: 10vh;
   width: 50%;
   transform: rotateY(180deg);
 }
@@ -125,8 +120,8 @@ nav {
   align-items: center;
   gap: 1rem;
   padding: 2rem;
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   font-weight: 700;
   border-radius: 10% 0;
   text-align: center;
@@ -136,8 +131,8 @@ nav {
   background-image: url(/assets/background.jpg);
 }
 .section3-container-img {
-  width: 40%;
-  height: 30%;
+  width: 30%;
+  height: 20%;
 }
 .section3-container-img img {
   width: 100%;
@@ -147,53 +142,59 @@ nav {
 .section3-container:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
     url("/assets/background3.jpg");
-  background-position: center;
+  background-position: right;
+  color: white;
+ 
 }
 .section3-top1 {
   position: absolute;
-  bottom: 1rem;
-  right: 4rem;
+  bottom:0vh;
+  right: 9vh;
 }
 .section4 {
   width: 100%;
   height: 63vh;
   background-image: url(/assets/background4.jpg);
   background-position: right;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
+
 .section4-container {
   width: 40%;
   height: 80%;
   color: aliceblue;
   position: relative;
-  left: 6rem;
+  left: 12vh;
 }
 .section4-container-heading {
-  padding: 1rem;
-  font-size: 3rem;
+  padding: 2.2vh;
+  font-size: 7vh;
+}
+.section4-container-paragraph {
+  font-size: 3.4vh;
+  padding: 2.2vh;
+}
+input[type="text"] {
+  padding: 2vh;
+  background-color: transparent;
+  border: 2px solid grey;
+  margin: 2vh;
+  color: white;
 }
 .section4-container-heading span {
   color: red;
 }
-.section4-container-paragraph {
-  font-size: 1.5rem;
-  padding: 1rem;
-}
+
 .section4-output {
-  margin: 0 1rem;
-  line-height: 1.5rem;
+  margin: 0 2vh;
+  line-height: 3vh;
+  font-size:2.5vh ;
 }
 .section4-output span {
   color: red;
-}
-input[type="text"] {
-  padding: 1rem;
-  background-color: transparent;
-  border: 2px solid grey;
-  margin: 1rem;
-  color: white;
 }
 .section5 {
   width: 100%;
@@ -201,7 +202,7 @@ input[type="text"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap:5vh;
   background-image: url(/assets/background2.jpg);
 }
 
@@ -222,52 +223,68 @@ input[type="text"] {
   width: 80%;
   height: 70%;
   position: absolute;
-  top: 10rem;
+  top: 22vh;
   text-align: center;
   place-self: center;
   background-color: white;
 }
 .pricing h1 {
-  padding: 1rem 0;
-  font-size: 2rem;
+  padding: 4vh 0;
+  font-size: 5vh;
 }
 .pricing h3 {
   color: grey;
-  margin: 1rem;
+  font-size: 3vh;
+  margin: 2vh;
 }
 .pricing h3 span {
-  font-size: 3rem;
+  font-size: 4.5vh;
   color: black;
 }
 .pricing ul {
-  font-size: 1.5rem;
+  font-size: 3vh;
   list-style-type: none;
-  line-height: 2.5rem;
+  line-height: 5.6vh;
+}
+.pricing-btn{
+  margin-top: -2vh;
 }
 footer {
   width: 100%;
-  height: 70vh;
+  height: auto;
   background-color: rgb(223, 223, 223);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position:static;
+  bottom: 0;
 }
 .footer-section1,
 .footer-section2,
 .footer-section3 {
   width: 28%;
-  height: 50%;
+  /* border: 2px solid black; */
+  padding: 12vh;
+ 
 }
 .footer-section1 h1 {
-  margin: 2rem 0;
+  margin: 4vh 0;
 }
-.soical {
-  margin: 2rem 0;
+.social {
+  margin: 4vh 0;
 }
 .footer-section1 ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  font-size: 3vh;
+  line-height: 7vh;
+  gap: 5vh;
+}
+.footer-section1 h1{
+  font-size: 5vh;
+}
+.footer-section1 >p,h3{
+  font-size: 2vh;
 }
 .footer-section1 ul li i {
   zoom: 1.5;
@@ -276,21 +293,20 @@ footer {
   color: red;
   cursor: pointer;
 }
-.footer-section1 h3 {
-  margin: 2rem 0;
-}
+
 .footer-section2 ul {
   list-style-type: none;
-  font-size: 1.3rem;
-  line-height: 3rem;
+  font-size: 3vh;
+  line-height: 7vh;
+}
+.footer-section2 ul h1{
+  font-size: 4vh;
 }
 
-
 /* media queries */
-@media (orientation: portrait) and (max-width: 376px) {
+ @media (max-width: 488px) {
   .logo,
-  .main-topbg,
-  .section2-top1,
+    .section2-top1,
   .section3-top1,
   .section2-top1 {
     display: none;
@@ -299,12 +315,16 @@ footer {
     right: 10vmin;
     top: 3vmin;
   }
+  .main-topbg{
+    display: none;
+  }
   .main-quote {
-    font-size: 1rem;
+    font-size: 100%;
     position: absolute;
     left: initial;
-    right: 5vmin;
-    top: 60vmin;
+    right: 5%;
+    top: initial;
+    bottom: 10%;
   }
   .section2,
   .section3 {
@@ -320,8 +340,912 @@ footer {
     right: initial;
     left: initial;
     place-self: center;
+    display: flex;
+    padding: 0;
+  }  .section2-top1,  .section3-top1{
+    width: 60vh;
+  }
+  .section-container-img,.section3-container-img{
+    width: 20%;
+    height: 20%;
+  }
+  .section-container-heading,.section3-container-heading{
+    width: 100%;
+        font-size: 80%;
+  }
+  .section-container-desc,.section3-container-desc{
+    font-size: 70%;
   }
   .section4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/assets/pricing3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .section4-container {
+    width: 50%;
+    height: auto;
+    left: initial;
+    top: initial;
+    color: rgb(255, 255, 255);
+  }
+  .section4-container-heading {
+    padding: 0.5rem;
+    font-size: 5vh;
+  }
+  .section4-container-paragraph {
+    padding: 0.5rem;
+    font-size: 2.5vh;
+  }
+  input[type="text"] {
+    padding: 1vh;
+    background-color: black;
+    margin: 2vh;
+    width: 22vh;
+    font-size: 2.5vh;
+    height: 6vh;
+  }
+  .section4-output {
+    margin: 0 2vh;
+    line-height: 3vh;
+    font-size: 2.5vh;
+  }
+  .btn2,.btn1,.btn3{
+    padding:5vh 0vh;
+    background-image: url(/assets/bg2.svg);
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    cursor: pointer;
+    width: 19vh;
+    font-size: 2vh;
+  }
+  .section5 {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 3vh;
+  }
+  .section5-container1 {
+    width: 90vw;
+    height: 100vh;
+  }
+  .section5-img {
+    width: 100%;
+    height: 40vh;
+  }
+  .pricing {
+    width: 90%;
+    height: 60vh;
+    top: 30vh;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-section1,
+  .footer-section2,
+  .footer-section3 {
+    width: 90%;
+    height: 50%;
+  }
+  .footer-section1 h1 {
+    margin: 1rem 0;
+  }
+  .soical {
+    margin: 2rem 0;
+  }
+  .footer-section1 h3 {
+    margin: 1rem 0;
+    margin-top: 5rem;
+  }
+  .footer-section2 ul {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .social ul{
+    margin-top: 2vh;
+    flex-wrap: wrap;
+    zoom: 1;
+  }
+}
+
+@media (min-width:489px) and (max-width: 768px) {
+  .logo{
+    display: none;
+  }
+  .section1{
+    height: 70vh;
+  }
+  .main-topbg{
+    left:5vh;
+    zoom: 1;
+  }
+  .main-top1 {
+    right: initial;
+    left: -10vw;
+    top: 3vmin;
+  }
+  .main-quote {
+    font-size: 130%;
+    position: absolute;
+    left: initial;
+    right: 5%;
+    top: initial;
+    bottom: 10%;
+  }
+  .section2,
+  .section3 {
+    display: grid;
+    height: 70vh;
+  }
+
+  .section-container
+   {
+    width: 33%;
+    height: 70%;
+    top: initial;
+    right: 10vh;
+    left: initial;
+    place-self: center;
+    display: flex;
+    padding: 0;
+  }
+  .section3-container{
+    width: 33%;
+    height: 70%;
+    top: initial;
+    right: initial;
+    left: 10vh;
+    place-self: center;
+    display: flex;
+    padding: 0;
+  }
+  .section2-top1,  .section3-top1{
+    width: 60vh;
+  }
+  .section3-top1{
+    position: absolute;
+    right: 0;
+
+  }
+  .section-container-img,.section3-container-img{
+    width: 20%;
+    height: 20%;
+  }
+  .section-container-heading,.section3-container-heading{
+    width: 100%;
+        font-size: 80%;
+  }
+  .section-container-desc,.section3-container-desc{
+    font-size: 70%;
+  }
+  .section4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/assets/pricing3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .section4-container {
+    width: 50%;
+    height: auto;
+    left: 20vh;
+    top: initial;
+    color: rgb(255, 255, 255);
+  }
+  .section4-container-heading {
+    padding: 0.5rem;
+    font-size: 5vh;
+  }
+  .section4-container-paragraph {
+    padding: 0.5rem;
+    font-size: 2.5vh;
+  }
+  input[type="text"] {
+    padding: 1vh;
+    background-color: black;
+    margin: 2vh;
+    width: 22vh;
+    font-size: 2.5vh;
+    height: 6vh;
+  }
+  .section4-output {
+    margin: 0 2vh;
+    line-height: 3vh;
+    font-size: 2.5vh;
+  }
+  .btn2,.btn1,.btn3{
+    padding:5vh 10vh;
+    background-image: url(/assets/bg2.svg);
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    cursor: pointer;
+    width: 30vh;
+    font-size: 2vh;
+  }
+  .section5 {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 9vh;
+  }
+  .section5-container1 {
+    width: 50vw;
+    height: 100vh;
+  }
+  .section5-img {
+    width: 100%;
+    height: 40vh;
+  }
+  .pricing {
+    width: 90%;
+    height: 60vh;
+    top: 30vh;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-section1,
+  .footer-section2,
+  .footer-section3 {
+    width: 90%;
+    height: 50%;
+  }
+  .footer-section1{
+    padding: 12vh 0 0 12vh;
+  }
+  .footer-section1 h1 {
+    margin: 1rem 0;
+  }
+  .soical {
+    margin: 2rem 0;
+  }
+  .footer-section2{
+    padding: 0 12vh;
+  }
+  .footer-section1 h3 {
+    margin: 1rem 0;
+    margin-top: 5rem;
+  }
+  .footer-section2 ul {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .social ul{
+    margin-top: 2vh;
+    flex-wrap: wrap;
+    zoom: 1;
+  }
+  .social h3{
+    margin-top: 5vh;
+  }
+}
+
+
+@media (min-width:769px) and (max-width: 1024px) {
+
+  .section1{
+    height: 90vh;
+  }
+  .main-topbg{
+    left: 14vw;
+    zoom: 0.7;
+  }
+  .main-top1 {
+    right: initial;
+    left: -6vw;
+    top: 3vmin;
+  }
+  .main-quote {
+    font-size: 6vh;
+    position: absolute;
+    left: initial;
+    right: 5%;
+    top: initial;
+    bottom: 10%;
+  }
+  .section2,
+  .section3 {
+    display: grid;
+    height: 70vh;
+  }
+
+  .section-container
+   {
+    width: 28%;
+    height: 70%;
+    top: initial;
+    right: 20vh;
+    left: initial;
+    place-self: center;
+    display: flex;
+    padding: 0;
+  }
+  .section3-container{
+    width: 28%;
+    height: 70%;
+    top: initial;
+    right: initial;
+    left: 20vh;
+    place-self: center;
+    display: flex;
+    padding: 0;
+  }
+  .section2-top1,  .section3-top1{
+    width: 70vh;
+  }
+  .section3-top1{
+    position: absolute;
+    right: 0;
+
+  }
+  .section-container-img,.section3-container-img{
+    width: 20%;
+    height: 20%;
+  }
+  .section-container-heading,.section3-container-heading{
+    width: 100%;
+        font-size: 80%;
+  }
+  .section-container-desc,.section3-container-desc{
+    font-size: 70%;
+  }
+  .section4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/assets/pricing3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .section4-container {
+    width: 50%;
+    height: auto;
+    left: 20vh;
+    top: initial;
+    color: rgb(255, 255, 255);
+  }
+  .section4-container-heading {
+    padding: 0.5rem;
+    font-size: 5vh;
+  }
+  .section4-container-paragraph {
+    padding: 0.5rem;
+    font-size: 2.5vh;
+  }
+  input[type="text"] {
+    padding: 1vh;
+    background-color: black;
+    margin: 2vh;
+    width: 22vh;
+    font-size: 2.5vh;
+    height: 6vh;
+  }
+  .section4-output {
+    margin: 0 2vh;
+    line-height: 3vh;
+    font-size: 2.5vh;
+  }
+  .btn2,.btn1,.btn3{
+    padding:5vh 10vh;
+    background-image: url(/assets/bg2.svg);
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    cursor: pointer;
+    width: 30vh;
+    font-size: 2vh;
+  }
+  .section5 {
+    margin-top: 5vh;
+    display: flex;
+    padding: 0 5vh;
+    width: 100%;
+    height: auto;
+    gap: 9vh;
+  }
+  .section5-container1 {
+    width: 50vw;
+    height: 100vh;
+  }
+  .section5-img {
+    width: 100%;
+    height: 40vh;
+  }
+  .pricing {
+    width: 90%;
+    height: 60vh;
+    top: 30vh;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    display: flex;
+  }
+  .footer-section1,
+  .footer-section2,
+  .footer-section3 {
+    width: 90%;
+    height: 50%;
+  }
+  .footer-section1{
+    padding: 12vh 0 0 12vh;
+  }
+  .footer-section1 h1 {
+    margin: 1rem 0;
+  }
+  .soical {
+    margin: 2rem 0;
+  }
+  .footer-section2{
+    padding: 0 12vh;
+  }
+  .footer-section1 h3 {
+    margin: 1rem 0;
+    margin-top: 5rem;
+  }
+  .footer-section2 ul {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .social ul{
+    margin-top: 2vh;
+    flex-wrap: wrap;
+    zoom: 1;
+  }
+  .social h3{
+    margin-top: 5vh;
+  }
+}
+
+@media (min-width:1025px) and (max-width: 1440px) {
+
+  .section1{
+    height: 100vh;
+  }
+  .main-topbg{
+    left: 9vw;
+    zoom: 1;
+  }
+  .main-top1 {
+    right: initial;
+    left: 0vw;
+    top: 8vh;
+    zoom: 1;
+  }
+  .main-quote {
+    font-size: 6vh;
+    position: absolute;
+    left: initial;
+    right: 5%;
+    top: initial;
+    bottom: 10%;
+  }
+  .section2,
+  .section3 {
+    display: grid;
+    height: 70vh;
+  }
+
+  .section-container
+   {
+    width: 28%;
+    height: 70%;
+    top: initial;
+    right: 20vh;
+    left: initial;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .section3-container{
+    width: 28%;
+    height: 70%;
+    top: initial;
+    right: initial;
+    left: 20vh;
+    place-self: center;
+    display: flex;
+    padding: 0;
+  }
+  .section2-top1,.section3-top1{
+    width: 70vh;
+  }
+  .section3-top1{
+    position: absolute;
+    right: 0;
+
+  }
+  .section-container-img,.section3-container-img{
+    width: 20%;
+    height: 20%;
+  }
+  .section-container-heading,.section3-container-heading{
+    width: 100%;
+    font-size: 2.3vh;
+  }
+  .section-container-desc,.section3-container-desc{
+    font-size: 2vh;
+  }
+  .section4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/assets/pricing3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .section4-container {
+    width: 50%;
+    height: auto;
+    left: 20vh;
+    top: initial;
+    color: rgb(255, 255, 255);
+  }
+  .section4-container-heading {
+    padding: 0.5rem;
+    font-size: 5vh;
+  }
+  .section4-container-paragraph {
+    padding: 0.5rem;
+    font-size: 2.5vh;
+  }
+  input[type="text"] {
+    padding: 1vh;
+    background-color: black;
+    margin: 2vh;
+    width: 22vh;
+    font-size: 2.5vh;
+    height: 6vh;
+  }
+  .section4-output {
+    margin: 0 2vh;
+    line-height: 3vh;
+    font-size: 2.5vh;
+  }
+  .btn2,.btn1,.btn3{
+    padding:5vh 10vh;
+    background-image: url(/assets/bg2.svg);
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    cursor: pointer;
+    width: 30vh;
+    font-size: 2vh;
+  }
+  .section5 {
+    margin-top: 5vh;
+    display: flex;
+    padding: 0 5vh;
+    width: 100%;
+    height: auto;
+    gap: 9vh;
+  }
+  .section5-container1 {
+    width: 50vw;
+    height: 100vh;
+  }
+  .section5-img {
+    width: 100%;
+    height: 40vh;
+  }
+  .pricing {
+    width: 90%;
+    height: 60vh;
+    top: 30vh;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    display: flex;
+  }
+  .footer-section1,
+  .footer-section2,
+  .footer-section3 {
+    width: 90%;
+    height: 50%;
+  }
+  .footer-section1{
+    padding: 12vh 0 0 12vh;
+  }
+  .footer-section1 h1 {
+    margin: 1rem 0;
+  }
+  .soical {
+    margin: 2rem 0;
+  }
+  .footer-section2{
+    padding: 0 12vh;
+  }
+  .footer-section1 h3 {
+    margin: 1rem 0;
+    margin-top: 5rem;
+  }
+  .footer-section2 ul {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .social ul{
+    margin-top: 2vh;
+    flex-wrap: wrap;
+    zoom: 1;
+  }
+  .social h3{
+    margin-top: 5vh;
+  }
+}
+
+@media (min-width:1441px) {
+
+  .section1{
+    height: 100vh;
+  }
+  .main-topbg{
+    left: 6vw;
+    top: 6vh;
+    zoom: 1;
+  }
+  .main-top1 {
+    right: initial;
+    left: 0vw;
+    top: 8vh;
+    zoom: 1;
+  }
+  .main-quote {
+    font-size: 7vh;
+    position: absolute;
+    left: initial;
+    right: 5vh;
+    top: initial;
+    bottom: 10%;
+  }
+  .section2,
+  .section3 {
+    display: grid;
+    height: 70vh;
+  }
+
+  .section-container
+   {
+    width: 28%;
+    height: 70%;
+    top: initial;
+    right: 20vh;
+    left: initial;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .section3-container{
+    width: 28%;
+    height: 70%;
+    top: initial;
+    right: initial;
+    left: 20vh;
+    place-self: center;
+    display: flex;
+    padding: 0;
+  }
+  .section2-top1,.section3-top1{
+    width: 70vh;
+  }
+  .section3-top1{
+    position: absolute;
+    right: 0;
+
+  }
+  .section-container-img,.section3-container-img{
+    width: 20%;
+    height: 20%;
+  }
+  .section-container-heading,.section3-container-heading{
+    width: 100%;
+    font-size: 2.3vh;
+  }
+  .section-container-desc,.section3-container-desc{
+    font-size: 2vh;
+  }
+  .section4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/assets/pricing3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .section4-container {
+    width: 50%;
+    height: auto;
+    left: 20vh;
+    top: initial;
+    color: rgb(255, 255, 255);
+  }
+  .section4-container-heading {
+    padding: 0.5rem;
+    font-size: 5vh;
+  }
+  .section4-container-paragraph {
+    padding: 0.5rem;
+    font-size: 2.5vh;
+  }
+  input[type="text"] {
+    padding: 1vh;
+    background-color: black;
+    margin: 2vh;
+    width: 22vh;
+    font-size: 2.5vh;
+    height: 6vh;
+  }
+  .section4-output {
+    margin: 0 2vh;
+    line-height: 3vh;
+    font-size: 2.5vh;
+  }
+  .btn2,.btn1,.btn3{
+    padding:5vh 10vh;
+    background-image: url(/assets/bg2.svg);
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    cursor: pointer;
+    width: 30vh;
+    font-size: 2vh;
+  }
+  .section5 {
+    margin-top: 5vh;
+    display: flex;
+    padding: 0 5vh;
+    width: 100%;
+    height: auto;
+    gap: 9vh;
+  }
+  .section5-container1 {
+    width: 50vw;
+    height: 100vh;
+  }
+  .section5-img {
+    width: 100%;
+    height: 40vh;
+  }
+  .pricing {
+    width: 90%;
+    height: 60vh;
+    top: 30vh;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    display: flex;
+  }
+  .footer-section1,
+  .footer-section2,
+  .footer-section3 {
+    width: 90%;
+    height: 50%;
+  }
+  .footer-section1{
+    padding: 12vh 0 0 12vh;
+  }
+  .footer-section1 h1 {
+    margin: 1rem 0;
+  }
+  .soical {
+    margin: 2rem 0;
+  }
+  .footer-section2{
+    padding: 0 12vh;
+  }
+  .footer-section1 h3 {
+    margin: 1rem 0;
+    margin-top: 5rem;
+  }
+  .footer-section2 ul {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .social ul{
+    margin-top: 2vh;
+    flex-wrap: wrap;
+    zoom: 1;
+  }
+  .social h3{
+    margin-top: 5vh;
+  }
+}
+
+/* 
+@media(max-width: 748px) {
+  .section1 {
+    width: 100%;
+    height: 50vh;
+  }
+  .logo,
+  .main-topbg,
+  .section2-top1,
+  .section3-top1,
+  .section2-top1 {
+    display: none;
+  }
+  .main-top1 {
+    content: url(/assets/exercise.png);
+    zoom: 0.26;
+    top: initial;
+    right: initial;
+    bottom: 0;
+    left: 1rem;
+  }
+  .main-quote {
+    font-size: 1.4rem;
+    left: initial;
+    right: 1rem;
+    bottom: 2rem;
+    top: initial;
+  }
+  .section2,
+  .section3 {
+    display: grid;
+    height: 90vh;
+    width: 100%;
+  }
+  .section-container,
+  .section3-container {
+    width: 80%;
+    height: 90%;
+    top: initial;
+    right: initial;
+    left: initial;
+    place-self: center;
+  }
+  .section3-container {
+    background-color: white;
+    color: black;
+  }
+  .section-container-img,
+  .section3-container-img {
+    width: 20%;
+  }
+  .section4 {
+    width: 100%;
+    height: 90vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(/assets/pricing3.jpg);
     background-position: center;
@@ -353,35 +1277,26 @@ footer {
     line-height: 1.2rem;
   }
   .section5 {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 300vh;
-    gap: 1rem;
+    display: grid;
+    height: 650vh;
+    gap: 0;
   }
   .section5-container1 {
     width: 90%;
-    height: 70%;
-  }
-  .section5-img {
-    width: 100%;
-    height: 40%;
+    place-self: center;
   }
   .pricing {
-    width: 90%;
-    height: 40%;
-    top: initial;
+    width: 80%;
+    height: 70%;
   }
   .btn3 {
-    margin-top: -1rem;
     width: 90%;
     font-size: 0.7rem;
   }
 
   footer {
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     display: grid;
   }
   .footer-section1,
@@ -405,8 +1320,11 @@ footer {
     line-height: 2.5rem;
     font-size: 1.2rem;
   }
-}
+} */
 
+
+
+/*
 @media (orientation: landscape) and (max-width: 648px) {
   .section1 {
     width: 100%;
@@ -660,236 +1578,126 @@ footer {
   }
 }
 
-@media (orientation: landscape) and (min-width: 648px) and (max-width: 748px) {
-  .section1 {
-    width: 100%;
-    height: 100vh;
-  }
-  .logo,
-  .main-topbg,
-  .section2-top1,
-  .section3-top1,
-  .section2-top1 {
+@media (min-width: 1920px) {
+  .logo {
     display: none;
   }
   .main-top1 {
-    content: url(/assets/exercise.png);
-    zoom: 0.26;
-    top: initial;
-    right: initial;
-    bottom: 0;
-    left: 1rem;
+    zoom: 2;
+    right: 5vmin;
+    top: 3vmin;
+  }
+  .main-topbg {
+    zoom: 2;
+    right: 6rem;
   }
   .main-quote {
-    font-size: 1.4rem;
-    left: initial;
-    right: 1rem;
-    bottom: 2rem;
-    top: initial;
+    font-size: 4rem;
+    top: 22rem;
   }
-  .section2,
-  .section3 {
-    display: grid;
-    height: 90vh;
-    width: 100%;
+  .btn1,.btn2 {
+    width: 30rem;
+    font-size: 2rem;
   }
-  .section-container,
-  .section3-container {
-    width: 80%;
-    height: 90%;
-    top: initial;
-    right: initial;
-    left: initial;
-    place-self: center;
+  .section-container,.section3-container {
+    width: 30%;
+    top: 20rem;
   }
-  .section3-container {
+  .section-container-img,.section3-container-img {
+    width: 25%;
+    height: 20%;
+  }
+  .section-container-heading,.section3-container-heading {
+    font-size: 1.7rem;
+  }
+  .section-container-desc,.section3-container-desc{
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  .section3-container{
     background-color: white;
     color: black;
   }
-  .section-container-img,
-  .section3-container-img {
-    width: 20%;
+  .section3-top1{
+    zoom: 1.5;
+    right: 0rem;
+    bottom: 1rem;
   }
-  .section4 {
+  .section4{
     width: 100%;
-    height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(/assets/pricing3.jpg);
-    background-position: center;
+    height: 70vh;
     background-size: cover;
   }
-  .section4-container {
-    width: 90%;
-    height: 90%;
-    left: initial;
-    top: initial;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
+  .section4-container{
+    width: 60%;
   }
   .section4-container-heading {
-    font-size: 1.2rem;
-    padding: 0.5rem;
+    padding: 1rem;
+    font-size: 6rem;
   }
   .section4-container-paragraph {
-    font-size: 1.2rem;
-    padding: 0.5rem;
+    font-size: 3rem;
+    padding: 1rem;
+  }
+  .section4-output{
+    font-size: 2.5rem;
+    line-height:4rem;
   }
   input[type="text"] {
-    padding: 0.5rem;
-    background-color: black;
-    margin: 0.5rem;
-  }
-  .section4-output {
-    margin: 0 0.5rem;
-    line-height: 1.2rem;
-  }
-  .section5 {
-    display: grid;
-    height: 650vh;
-    gap: 0;
-  }
-  .section5-container1 {
-    width: 90%;
-    place-self: center;
-  }
-  .pricing {
-    width: 80%;
-    height: 70%;
-  }
-  .btn3 {
-    width: 90%;
-    font-size: 0.7rem;
-  }
-
-  footer {
-    width: 100%;
-    height: 200vh;
-    display: grid;
-  }
-  .footer-section1,
-  .footer-section2,
-  .footer-section3 {
-    place-self: center;
-    width: 90%;
-    height: 50%;
-  }
-  .footer-section1 h1 {
-    margin: 1rem 0;
-  }
-  .soical {
-    margin: 2rem 0;
-  }
-  .footer-section1 h3 {
-    margin: 1rem 0;
-    margin-top: 5rem;
-  }
-  .footer-section2 ul {
-    line-height: 2.5rem;
-    font-size: 1.2rem;
-  }
-}
-
-@media (orientation:portrait) and (min-width: 426px) and (max-width: 768px) {
-  .logo,
-  .main-topbg {
-    display: none;
-  }
-  .main {
-    height: 70vh;
-  }
-  .main-top1 {
-    right: 4vmin;
-    top: 3vmin;
-  }
-  .main-quote {
-    font-size: 2rem;
-    position: absolute;
-    left: 1rem;
-    right: initial;
-    top: initial;
-    bottom: 5rem;
-  }
-  .section2,
-  .section3 {
-    width: 100%;
-    height: 60vh;
-  }
-  .section-container {
-    width: 30%;
-    height: 80%;
-    top: 10%;
-    right: 7rem;
-  }
-  .section3-top1 {
-    zoom: 0.6;
-    right: -1rem;
-  }
-  .section3-container {
-    width: 30%;
-    height: 80%;
-    left: 7rem;
-    top: 2rem;
-  }
-  .section2-top1 {
-    left: 2rem;
-  }
-  .section4 {
-    width: 100%;
-    height: 70vh;
-  }
-  .section4-container{
-    width: 45%;
-    height: 80%;
-  }
-  .section4-container-heading{
-    padding: 0;
-    font-size: 2rem;
-  }
-  .section4-container-paragraph{
-    font-size: 1rem;
-    padding: 1rem 0;
-  }
-  input[type="text"] {
-    padding: 0.5rem;
+    padding: 2rem;
     background-color: transparent;
     border: 2px solid grey;
     margin: 1rem;
-  }
-  .section4-output span {
-    color: rgb(33, 190, 13);
+    color: white;
+    font-size: 2rem;
   }
   .section5{
-  width: 100%;
-  height: auto;
-display: flex;
-  gap: 2rem;
-  flex-direction:column ;
-  }
-  .section5-container1 {
-    box-shadow: 5px 5px 10px rgb(107, 102, 102);
-    width: 53%;
+    width: 100%;
     height: 100vh;
-    position: relative;
-    display: grid;
-    cursor: pointer;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  footer {
+  .section5-container1{
+    width: 30%;
+    height: 75%;
+  }
+  .pricing{
+    width: 80%;
+    height: 80%;
+  }
+  .pricing h1{
+    font-size:4rem
+  }
+  .pricing h3{
+    font-size: 2rem;
+  }
+  .pricing ul{
+    line-height: 4rem;
+    font-size: 2rem;
+  }
+  footer{
     width: 100%;
     height: 50vh;
-    margin-top: 3rem;
-    background-color: rgb(223, 223, 223);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
   }
   .footer-section1,
 .footer-section2,
 .footer-section3 {
-  width: 28%;
+  width: 30%;
   height: 50%;
 }
-.footer-section1 h1 {
-    margin: 0 0 2rem 0;
-  }
+.footer-section1{
+  font-size: 2rem;
 }
+.footer-section1 h1{
+  margin:0 0 1rem 0;
+  font-size:4rem ;
+}
+.footer-section1 ul{
+  font-size: 2rem;
+}
+.footer-section2 ul {
+  line-height: 4rem;
+  font-size:2rem ;
+}
+} */

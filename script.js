@@ -18,19 +18,19 @@ calculate_bmi.addEventListener("click", (e) => {
     output.innerHTML = `Your BMI is: <span>${sum}</span> <br> Your weight is: <span>UnderWeight</span> `;
     }
     else if(sum>18.5 && sum<24.9){
-    output.innerHTML = `Your BMI is: <span>${sum}</span> Your Weight is:<span>Normal</span>`;
+    output.innerHTML = `Your BMI is: <span>${sum}</span>  <br />Your Weight is:<span>Normal</span>`;
 
     }
     else if(sum>25 && sum<29.9){
-    output.innerHTML = `Your BMI is: <span>${sum}</span> Your Weight is:<span>OverWeight</span>`;
+    output.innerHTML = `Your BMI is: <span>${sum}</span> <br />Your Weight is:<span>OverWeight</span>`;
 
     }
     else if(sum>30 && sum<34.5){
-        output.innerHTML = `Your BMI is: <span>${sum}</span> Your Weight is:<span>Obese</span>`;
+        output.innerHTML = `Your BMI is: <span>${sum}</span> <br />Your Weight is:<span>Obese</span>`;
     
     }
     else if(sum>35){
-        output.innerHTML = `Your BMI is: <span>${sum}</span> Your Weight is:<span>Extremely Obese</span>`;
+        output.innerHTML = `Your BMI is: <span>${sum}</span> <br />Your Weight is:<span>Extremely Obese</span>`;
     
     }
         
