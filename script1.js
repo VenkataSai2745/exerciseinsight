@@ -1,5 +1,7 @@
 let btn = document.querySelector(".btn");
 let container = document.querySelector(".container");
+const loading =document.querySelector(".loading")
+
 
 window.addEventListener("load", () => {
   let savedExercises = localStorage.getItem("exercises");
@@ -10,6 +12,7 @@ window.addEventListener("load", () => {
 });
 
 btn.addEventListener("click", async () => {
+  loading.style.display="block"
   let search = document.querySelector("#exercise-search");
   if (search.value.trim() !== "") {
     const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${search.value}?limit=30`;
@@ -25,6 +28,7 @@ btn.addEventListener("click", async () => {
     try {
       const response = await fetch(url, options);
       const result = await response.json();
+      loading.style.display="none"
 
       // Save result to localStorage
       localStorage.setItem("exercises", JSON.stringify(result));

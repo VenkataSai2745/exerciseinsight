@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ExerciseInsight</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="newStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- <header>
@@ -23,77 +31,66 @@
     </header> -->
 
     <section class="main section1">
-        <!-- <img src="/assets/logo.png" alt="" class="logo"> -->
-      <img src="/assets/trainerbg.png" alt="" class="main-topbg" />
-      <img src="/assets/two trainers.png" alt="" class="main-top1" />
+    
       <div class="main-quote">
         <h1>
           The pain you feel today <br />
           will be the strength you <br />
           feel tomorrow.
         </h1>
-        <button class="btn1">Join Now</button>
       </div>
     </section>
 
-    <div class="section2">
-      <img src="/assets/exercise.png" alt="" class="section2-top1" />
-      <div class="section-container exercises">
-        <div class="section-container-img">
+
+    <section class="section2">
+      <div class="section2-container exercises">
+        <div class="section2-img">
           <img src="/assets/equpments.png" alt="" />
         </div>
-        <div class="section-container-heading">
+        <div class="section2-heading">
           <h1>Find your Exercises</h1>
         </div>
-        <div class="section-container-desc">
-          We are here to help you out to find the best exercises for you and how
-          to do them.
+        <div class="section2-desc">
+          We are here to help you out to find the best exercises for you based on the body part and how to do them.
         </div>
       </div>
-    </div>
-
-    <section class="section3">
-      <img src="/assets/personal-training.png" alt="" class="section3-top1" />
-      <div class="section3-container">
-        <div class="section3-container-img">
+      <div class="section2-container">
+        <div class="section2-img">
+          <img src="/assets/nutrients.png" alt="" />
+        </div>
+        <div class="section2-heading">
+          <h1>Nutrients</h1>
+        </div>
+        <div class="section2-desc">
+          Our team will work with you to create a personalized meal plan that
+          helps you reach your specific health goals.
+          
+        </div>
+      </div> <div class="section2-container">
+        <div class="section2-img">
           <img src="/assets/weightlifter.png" alt="" />
         </div>
-        <div class="section3-container-heading">
-          <h1>Get Your Personal Trainer</h1>
+        <div class="section2-heading">
+          <h1>Find your Exercises</h1>
         </div>
-        <div class="section3-container-desc">
-          Our team of experts will work with you to create a customized plan
-          that helps you achieve success one step at a time.
+        <div class="section2-desc">
+          
+          We are here to help you out to find the best exercises for you based on the body part and how to do them.
         </div>
       </div>
     </section>
 
-    <div class="section2">
-      <img src="/assets/healthy-dite.png" alt="" class="section2-top1" />
-      <div class="section-container">
-        <div class="section-container-img">
-          <img src="/assets/nutrients.png" alt="" />
-        </div>
-        <div class="section-container-heading">
-          <h1>Nutrients</h1>
-        </div>
-        <div class="section-container-desc">
-          Our team will work with you to create a personalized meal plan that
-          helps you reach your specific health goals.
-        </div>
-      </div>
-    </div>
-
-    <section class="section4">
-      <div class="section4-container">
-        <h1 class="section4-container-heading">
+    <section class="section3">
+      <div class="section3-container">
+        <h1>
           Calculate your <span>BMI</span>
         </h1>
-        <p class="section4-container-paragraph">
+        
+        <p class="section3-paragraph">
           Easily determine your body mass index with our accurate calculation
           tool.
         </p>
-        <div class="section4-input">
+        <div class="section3-input">
           <input
             type="text"
             name="weight"
@@ -107,18 +104,18 @@
             placeholder="Height in Cm"
           />
         </div>
-        <div class="section4-output">
+        <div class="section3-output">
           Your BMI is:
           <br />
           Your weight is:
         </div>
-        <button class="section4-button btn2">Calculate</button>
+        <button class="section3-button btn1">Calculate</button>
       </div>
     </section>
 
-    <section class="section5">
-      <div class="section5-container1">
-        <img src="/assets/pricing1.jpg" alt="" class="section5-img" />
+    <div class="section4">
+      <div class="section4-container">
+        <img src="/assets/pricing1.jpg" alt="" class="section4-img" />
         <div class="pricing">
           <h1 class="pricing-heading">Monthly</h1>
           <h3 class="price">RS <span>999</span> p/m</h3>
@@ -129,11 +126,12 @@
             <li>Personal Trainer</li>
             <li>Cycling</li>
           </ul>
-          <button class="pricing-btn btn3">purchase now</button>
+          <button class="pricing-btn btn2">purchase now</button>
         </div>
       </div>
-       <div class="section5-container1">
-        <img src="/assets/pricing2.jpg" alt="" class="section5-img" />
+
+      <div class="section4-container">
+        <img src="/assets/pricing2.jpg" alt="" class="section4-img" />
         <div class="pricing">
           <h1 class="pricing-heading">Quaterly</h1>
           <h3 class="price">RS <span>3499</span> p/q</h3>
@@ -144,11 +142,13 @@
             <li>Personal Trainer</li>
             <li>Cycling</li>
           </ul>
-          <button class="pricing-btn btn3">purchase now</button>
+          <button class="pricing-btn btn2">purchase now</button>
         </div>
       </div>
-      <div class="section5-container1">
-        <img src="/assets/pricing3.jpg" alt="" class="section5-img" />
+
+
+      <div class="section4-container">
+        <img src="/assets/pricing3.jpg" alt="" class="section4-img" />
         <div class="pricing">
           <h1 class="pricing-heading">Yearly</h1>
           <h3 class="price">RS <span>9999</span> p/y</h3>
@@ -159,16 +159,19 @@
             <li>Personal Trainer</li>
             <li>Cycling</li>
           </ul>
-          <button class="pricing-btn btn3">purchase now</button>
+          <button class=" btn2">purchase now</button>
         </div>
-      </div> 
-    </section>
+      </div>
+    </div>
+
 
     <footer>
-      <div class="footer-section1">
-        
-        <h1>Body Blitz</h1>
-        <p>Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals. </p>
+      <div class="footer-container">
+        <h1>Exercise Insight</h1>
+        <p>
+          Take your health and body to the next level with our comprehensive
+          program designed to help you reach your fitness goals.
+        </p>
         <div class="social">
           <ul>
             <li><i class="fa-brands fa-facebook"></i></li>
@@ -176,10 +179,37 @@
             <li><i class="fa-brands fa-square-x-twitter"></i></li>
             <li><i class="fa-brands fa-square-whatsapp"></i></li>
           </ul>
-          <h3>Privacy Policy | © 2024  Venkata Sai
-           </h3>
         </div>
+        <h3>Privacy Policy | © 2024 Venkata Sai</h3>
+      </div>
+      <div class="footer-container2">
+        <ul>
+          <h1>Services</h1>
+          <li>Fitness classes</li>
+          <li>calisthenics</li>
+          <li>Yoga classes</li>
+          <li>Full body strength</li>
+        </ul>
+      </div>
+    </footer>
+<!-- 
 
+    <footer>
+      <div class="footer-section1">
+        <h1>Body Blitz</h1>
+        <p>
+          Take your health and body to the next level with our comprehensive
+          program designed to help you reach your fitness goals.
+        </p>
+        <div class="social">
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-square-x-twitter"></i></li>
+            <li><i class="fa-brands fa-square-whatsapp"></i></li>
+          </ul>
+          <h3>Privacy Policy | © 2024 Venkata Sai</h3>
+        </div>
       </div>
       <div class="footer-section2">
         <ul>
@@ -190,9 +220,8 @@
           <li>Full body strength</li>
         </ul>
       </div>
-      
-
     </footer>
+     -->
     <script src="script.js"></script>
   </body>
 </html>
