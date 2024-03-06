@@ -24,7 +24,7 @@ nav {
 }
 .main-topbg {
   position: absolute;
-  right:30vh;
+  right: 30vh;
 }
 .main-top1 {
   position: absolute;
@@ -43,8 +43,10 @@ nav {
   font-optical-sizing: auto;
   font-size: 6vh;
 }
-.btn2,.btn1,.btn3{
-  padding:5vh 10vh;
+.btn2,
+.btn1,
+.btn3 {
+  padding: 5vh 10vh;
   background-image: url(/assets/bg2.svg);
   background-color: transparent;
   border: none;
@@ -144,11 +146,10 @@ nav {
     url("/assets/background3.jpg");
   background-position: right;
   color: white;
- 
 }
 .section3-top1 {
   position: absolute;
-  bottom:0vh;
+  bottom: 0vh;
   right: 9vh;
 }
 .section4 {
@@ -191,7 +192,7 @@ input[type="text"] {
 .section4-output {
   margin: 0 2vh;
   line-height: 3vh;
-  font-size:2.5vh ;
+  font-size: 2.5vh;
 }
 .section4-output span {
   color: red;
@@ -202,7 +203,7 @@ input[type="text"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:5vh;
+  gap: 5vh;
   background-image: url(/assets/background2.jpg);
 }
 
@@ -246,7 +247,7 @@ input[type="text"] {
   list-style-type: none;
   line-height: 5.6vh;
 }
-.pricing-btn{
+.pricing-btn {
   margin-top: -2vh;
 }
 footer {
@@ -256,7 +257,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position:static;
+  position: static;
   bottom: 0;
 }
 .footer-section1,
@@ -265,7 +266,6 @@ footer {
   width: 28%;
   /* border: 2px solid black; */
   padding: 12vh;
- 
 }
 .footer-section1 h1 {
   margin: 4vh 0;
@@ -280,10 +280,11 @@ footer {
   line-height: 7vh;
   gap: 5vh;
 }
-.footer-section1 h1{
+.footer-section1 h1 {
   font-size: 5vh;
 }
-.footer-section1 >p,h3{
+.footer-section1 > p,
+h3 {
   font-size: 2vh;
 }
 .footer-section1 ul li i {
@@ -299,61 +300,66 @@ footer {
   font-size: 3vh;
   line-height: 7vh;
 }
-.footer-section2 ul h1{
+.footer-section2 ul h1 {
   font-size: 4vh;
 }
 
 /* media queries */
- @media (max-width: 488px) {
+@media (max-width: 488px) {
   .logo,
-    .section2-top1,
+  .section2-top1,
   .section3-top1,
   .section2-top1 {
     display: none;
   }
   .main-top1 {
-    right: 10vmin;
-    top: 3vmin;
+    right: 8vw;
+    top: 6vh;
   }
-  .main-topbg{
+  .main-topbg {
     display: none;
   }
   .main-quote {
     font-size: 100%;
     position: absolute;
     left: initial;
-    right: 5%;
+    right: 5vw;
     top: initial;
-    bottom: 10%;
+    bottom: 20vh;
   }
   .section2,
   .section3 {
     display: grid;
-    height: 70vh;
+    height: 60vh;
   }
 
   .section-container,
   .section3-container {
-    width: 80%;
-    height: 70%;
+    width: 90vw;
+    height: 35vh;
     top: initial;
     right: initial;
     left: initial;
     place-self: center;
     display: flex;
     padding: 0;
-  }  .section2-top1,  .section3-top1{
+  }
+  .section2-top1,
+  .section3-top1 {
     width: 60vh;
   }
-  .section-container-img,.section3-container-img{
+  .section-container-img,
+  .section3-container-img {
     width: 20%;
     height: 20%;
   }
-  .section-container-heading,.section3-container-heading{
+  .section-container-heading,
+  .section3-container-heading {
+    font-size: 80%;
     width: 100%;
-        font-size: 80%;
   }
-  .section-container-desc,.section3-container-desc{
+  .section-container-desc,
+  .section3-container-desc {
     font-size: 70%;
   }
   .section4 {
@@ -362,22 +368,24 @@ footer {
     background-position: center;
     background-size: cover;
     display: flex;
+    height: 70vh;
+    padding: 2vh;
     align-items: center;
   }
 
   .section4-container {
-    width: 50%;
+    width: 90%;
     height: auto;
     left: initial;
     top: initial;
     color: rgb(255, 255, 255);
   }
   .section4-container-heading {
-    padding: 0.5rem;
+    padding: 1vh;
     font-size: 5vh;
   }
   .section4-container-paragraph {
-    padding: 0.5rem;
+    padding: 1vh;
     font-size: 2.5vh;
   }
   input[type="text"] {
@@ -393,8 +401,10 @@ footer {
     line-height: 3vh;
     font-size: 2.5vh;
   }
-  .btn2,.btn1,.btn3{
-    padding:5vh 0vh;
+  .btn2,
+  .btn1,
+  .btn3 {
+    padding: 5vh 0vh;
     background-image: url(/assets/bg2.svg);
     background-color: transparent;
     border: none;
@@ -431,6 +441,7 @@ footer {
     width: 100%;
     height: auto;
     display: flex;
+    margin-top: 5vh;
     flex-direction: column;
   }
   .footer-section1,
@@ -438,37 +449,37 @@ footer {
   .footer-section3 {
     width: 90%;
     height: 50%;
+    padding: 2vh;
   }
   .footer-section1 h1 {
     margin: 1rem 0;
   }
   .soical {
-    margin: 2rem 0;
+    margin: 1vh 0;
   }
   .footer-section1 h3 {
     margin: 1rem 0;
-    margin-top: 5rem;
   }
   .footer-section2 ul {
     line-height: 2.5rem;
-    font-size: 1.2rem;
+    font-size: 3vh;
   }
-  .social ul{
+  .social ul {
     margin-top: 2vh;
     flex-wrap: wrap;
     zoom: 1;
   }
 }
 
-@media (min-width:489px) and (max-width: 768px) {
-  .logo{
+@media (min-width: 489px) and (max-width: 768px) {
+  .logo {
     display: none;
   }
-  .section1{
+  .section1 {
     height: 70vh;
   }
-  .main-topbg{
-    left:5vh;
+  .main-topbg {
+    left: 5vh;
     zoom: 1;
   }
   .main-top1 {
@@ -490,8 +501,7 @@ footer {
     height: 70vh;
   }
 
-  .section-container
-   {
+  .section-container {
     width: 33%;
     height: 70%;
     top: initial;
@@ -501,7 +511,7 @@ footer {
     display: flex;
     padding: 0;
   }
-  .section3-container{
+  .section3-container {
     width: 33%;
     height: 70%;
     top: initial;
@@ -511,23 +521,26 @@ footer {
     display: flex;
     padding: 0;
   }
-  .section2-top1,  .section3-top1{
+  .section2-top1,
+  .section3-top1 {
     width: 60vh;
   }
-  .section3-top1{
+  .section3-top1 {
     position: absolute;
     right: 0;
-
   }
-  .section-container-img,.section3-container-img{
+  .section-container-img,
+  .section3-container-img {
     width: 20%;
     height: 20%;
   }
-  .section-container-heading,.section3-container-heading{
+  .section-container-heading,
+  .section3-container-heading {
     width: 100%;
-        font-size: 80%;
+    font-size: 80%;
   }
-  .section-container-desc,.section3-container-desc{
+  .section-container-desc,
+  .section3-container-desc {
     font-size: 70%;
   }
   .section4 {
@@ -567,8 +580,10 @@ footer {
     line-height: 3vh;
     font-size: 2.5vh;
   }
-  .btn2,.btn1,.btn3{
-    padding:5vh 10vh;
+  .btn2,
+  .btn1,
+  .btn3 {
+    padding: 5vh 10vh;
     background-image: url(/assets/bg2.svg);
     background-color: transparent;
     border: none;
@@ -613,7 +628,7 @@ footer {
     width: 90%;
     height: 50%;
   }
-  .footer-section1{
+  .footer-section1 {
     padding: 12vh 0 0 12vh;
   }
   .footer-section1 h1 {
@@ -622,7 +637,7 @@ footer {
   .soical {
     margin: 2rem 0;
   }
-  .footer-section2{
+  .footer-section2 {
     padding: 0 12vh;
   }
   .footer-section1 h3 {
@@ -633,23 +648,21 @@ footer {
     line-height: 2.5rem;
     font-size: 1.2rem;
   }
-  .social ul{
+  .social ul {
     margin-top: 2vh;
     flex-wrap: wrap;
     zoom: 1;
   }
-  .social h3{
+  .social h3 {
     margin-top: 5vh;
   }
 }
 
-
-@media (min-width:769px) and (max-width: 1024px) {
-
-  .section1{
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section1 {
     height: 90vh;
   }
-  .main-topbg{
+  .main-topbg {
     left: 14vw;
     zoom: 0.7;
   }
@@ -672,8 +685,7 @@ footer {
     height: 70vh;
   }
 
-  .section-container
-   {
+  .section-container {
     width: 28%;
     height: 70%;
     top: initial;
@@ -683,7 +695,7 @@ footer {
     display: flex;
     padding: 0;
   }
-  .section3-container{
+  .section3-container {
     width: 28%;
     height: 70%;
     top: initial;
@@ -693,23 +705,26 @@ footer {
     display: flex;
     padding: 0;
   }
-  .section2-top1,  .section3-top1{
+  .section2-top1,
+  .section3-top1 {
     width: 70vh;
   }
-  .section3-top1{
+  .section3-top1 {
     position: absolute;
     right: 0;
-
   }
-  .section-container-img,.section3-container-img{
+  .section-container-img,
+  .section3-container-img {
     width: 20%;
     height: 20%;
   }
-  .section-container-heading,.section3-container-heading{
+  .section-container-heading,
+  .section3-container-heading {
     width: 100%;
-        font-size: 80%;
+    font-size: 80%;
   }
-  .section-container-desc,.section3-container-desc{
+  .section-container-desc,
+  .section3-container-desc {
     font-size: 70%;
   }
   .section4 {
@@ -749,8 +764,10 @@ footer {
     line-height: 3vh;
     font-size: 2.5vh;
   }
-  .btn2,.btn1,.btn3{
-    padding:5vh 10vh;
+  .btn2,
+  .btn1,
+  .btn3 {
+    padding: 5vh 10vh;
     background-image: url(/assets/bg2.svg);
     background-color: transparent;
     border: none;
@@ -795,7 +812,7 @@ footer {
     width: 90%;
     height: 50%;
   }
-  .footer-section1{
+  .footer-section1 {
     padding: 12vh 0 0 12vh;
   }
   .footer-section1 h1 {
@@ -804,7 +821,7 @@ footer {
   .soical {
     margin: 2rem 0;
   }
-  .footer-section2{
+  .footer-section2 {
     padding: 0 12vh;
   }
   .footer-section1 h3 {
@@ -815,22 +832,21 @@ footer {
     line-height: 2.5rem;
     font-size: 1.2rem;
   }
-  .social ul{
+  .social ul {
     margin-top: 2vh;
     flex-wrap: wrap;
     zoom: 1;
   }
-  .social h3{
+  .social h3 {
     margin-top: 5vh;
   }
 }
 
-@media (min-width:1025px) and (max-width: 1440px) {
-
-  .section1{
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .section1 {
     height: 100vh;
   }
-  .main-topbg{
+  .main-topbg {
     left: 9vw;
     zoom: 1;
   }
@@ -854,8 +870,7 @@ footer {
     height: 70vh;
   }
 
-  .section-container
-   {
+  .section-container {
     width: 28%;
     height: 70%;
     top: initial;
@@ -866,7 +881,7 @@ footer {
     flex-direction: column;
     padding: 0;
   }
-  .section3-container{
+  .section3-container {
     width: 28%;
     height: 70%;
     top: initial;
@@ -876,23 +891,26 @@ footer {
     display: flex;
     padding: 0;
   }
-  .section2-top1,.section3-top1{
+  .section2-top1,
+  .section3-top1 {
     width: 70vh;
   }
-  .section3-top1{
+  .section3-top1 {
     position: absolute;
     right: 0;
-
   }
-  .section-container-img,.section3-container-img{
+  .section-container-img,
+  .section3-container-img {
     width: 20%;
     height: 20%;
   }
-  .section-container-heading,.section3-container-heading{
+  .section-container-heading,
+  .section3-container-heading {
     width: 100%;
     font-size: 2.3vh;
   }
-  .section-container-desc,.section3-container-desc{
+  .section-container-desc,
+  .section3-container-desc {
     font-size: 2vh;
   }
   .section4 {
@@ -932,8 +950,10 @@ footer {
     line-height: 3vh;
     font-size: 2.5vh;
   }
-  .btn2,.btn1,.btn3{
-    padding:5vh 10vh;
+  .btn2,
+  .btn1,
+  .btn3 {
+    padding: 5vh 10vh;
     background-image: url(/assets/bg2.svg);
     background-color: transparent;
     border: none;
@@ -978,7 +998,7 @@ footer {
     width: 90%;
     height: 50%;
   }
-  .footer-section1{
+  .footer-section1 {
     padding: 12vh 0 0 12vh;
   }
   .footer-section1 h1 {
@@ -987,7 +1007,7 @@ footer {
   .soical {
     margin: 2rem 0;
   }
-  .footer-section2{
+  .footer-section2 {
     padding: 0 12vh;
   }
   .footer-section1 h3 {
@@ -998,22 +1018,21 @@ footer {
     line-height: 2.5rem;
     font-size: 1.2rem;
   }
-  .social ul{
+  .social ul {
     margin-top: 2vh;
     flex-wrap: wrap;
     zoom: 1;
   }
-  .social h3{
+  .social h3 {
     margin-top: 5vh;
   }
 }
 
-@media (min-width:1441px) {
-
-  .section1{
+@media (min-width: 1441px) {
+  .section1 {
     height: 100vh;
   }
-  .main-topbg{
+  .main-topbg {
     left: 6vw;
     top: 6vh;
     zoom: 1;
@@ -1038,8 +1057,7 @@ footer {
     height: 70vh;
   }
 
-  .section-container
-   {
+  .section-container {
     width: 28%;
     height: 70%;
     top: initial;
@@ -1050,7 +1068,7 @@ footer {
     flex-direction: column;
     padding: 0;
   }
-  .section3-container{
+  .section3-container {
     width: 28%;
     height: 70%;
     top: initial;
@@ -1060,23 +1078,26 @@ footer {
     display: flex;
     padding: 0;
   }
-  .section2-top1,.section3-top1{
+  .section2-top1,
+  .section3-top1 {
     width: 70vh;
   }
-  .section3-top1{
+  .section3-top1 {
     position: absolute;
     right: 0;
-
   }
-  .section-container-img,.section3-container-img{
+  .section-container-img,
+  .section3-container-img {
     width: 20%;
     height: 20%;
   }
-  .section-container-heading,.section3-container-heading{
+  .section-container-heading,
+  .section3-container-heading {
     width: 100%;
     font-size: 2.3vh;
   }
-  .section-container-desc,.section3-container-desc{
+  .section-container-desc,
+  .section3-container-desc {
     font-size: 2vh;
   }
   .section4 {
@@ -1116,8 +1137,10 @@ footer {
     line-height: 3vh;
     font-size: 2.5vh;
   }
-  .btn2,.btn1,.btn3{
-    padding:5vh 10vh;
+  .btn2,
+  .btn1,
+  .btn3 {
+    padding: 5vh 10vh;
     background-image: url(/assets/bg2.svg);
     background-color: transparent;
     border: none;
@@ -1162,7 +1185,7 @@ footer {
     width: 90%;
     height: 50%;
   }
-  .footer-section1{
+  .footer-section1 {
     padding: 12vh 0 0 12vh;
   }
   .footer-section1 h1 {
@@ -1171,7 +1194,7 @@ footer {
   .soical {
     margin: 2rem 0;
   }
-  .footer-section2{
+  .footer-section2 {
     padding: 0 12vh;
   }
   .footer-section1 h3 {
@@ -1182,522 +1205,12 @@ footer {
     line-height: 2.5rem;
     font-size: 1.2rem;
   }
-  .social ul{
+  .social ul {
     margin-top: 2vh;
     flex-wrap: wrap;
     zoom: 1;
   }
-  .social h3{
+  .social h3 {
     margin-top: 5vh;
   }
 }
-
-/* 
-@media(max-width: 748px) {
-  .section1 {
-    width: 100%;
-    height: 50vh;
-  }
-  .logo,
-  .main-topbg,
-  .section2-top1,
-  .section3-top1,
-  .section2-top1 {
-    display: none;
-  }
-  .main-top1 {
-    content: url(/assets/exercise.png);
-    zoom: 0.26;
-    top: initial;
-    right: initial;
-    bottom: 0;
-    left: 1rem;
-  }
-  .main-quote {
-    font-size: 1.4rem;
-    left: initial;
-    right: 1rem;
-    bottom: 2rem;
-    top: initial;
-  }
-  .section2,
-  .section3 {
-    display: grid;
-    height: 90vh;
-    width: 100%;
-  }
-  .section-container,
-  .section3-container {
-    width: 80%;
-    height: 90%;
-    top: initial;
-    right: initial;
-    left: initial;
-    place-self: center;
-  }
-  .section3-container {
-    background-color: white;
-    color: black;
-  }
-  .section-container-img,
-  .section3-container-img {
-    width: 20%;
-  }
-  .section4 {
-    width: 100%;
-    height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(/assets/pricing3.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  .section4-container {
-    width: 90%;
-    height: 90%;
-    left: initial;
-    top: initial;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-  }
-  .section4-container-heading {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .section4-container-paragraph {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  input[type="text"] {
-    padding: 0.5rem;
-    background-color: black;
-    margin: 0.5rem;
-  }
-  .section4-output {
-    margin: 0 0.5rem;
-    line-height: 1.2rem;
-  }
-  .section5 {
-    display: grid;
-    height: 650vh;
-    gap: 0;
-  }
-  .section5-container1 {
-    width: 90%;
-    place-self: center;
-  }
-  .pricing {
-    width: 80%;
-    height: 70%;
-  }
-  .btn3 {
-    width: 90%;
-    font-size: 0.7rem;
-  }
-
-  footer {
-    width: 100%;
-    height: 200vh;
-    display: grid;
-  }
-  .footer-section1,
-  .footer-section2,
-  .footer-section3 {
-    place-self: center;
-    width: 90%;
-    height: 50%;
-  }
-  .footer-section1 h1 {
-    margin: 1rem 0;
-  }
-  .soical {
-    margin: 2rem 0;
-  }
-  .footer-section1 h3 {
-    margin: 1rem 0;
-    margin-top: 5rem;
-  }
-  .footer-section2 ul {
-    line-height: 2.5rem;
-    font-size: 1.2rem;
-  }
-} */
-
-
-
-/*
-@media (orientation: landscape) and (max-width: 648px) {
-  .section1 {
-    width: 100%;
-    height: 100vh;
-  }
-  .logo,
-  .main-topbg,
-  .section2-top1,
-  .section3-top1,
-  .section2-top1 {
-    display: none;
-  }
-  .main-top1 {
-    content: url(/assets/exercise.png);
-    zoom: 0.26;
-    top: initial;
-    right: initial;
-    bottom: 0;
-    left: 1rem;
-  }
-  .main-quote {
-    font-size: 1.4rem;
-    left: initial;
-    right: 1rem;
-    bottom: 2rem;
-    top: initial;
-  }
-  .section2,
-  .section3 {
-    display: grid;
-    height: 90vh;
-    width: 100%;
-  }
-  .section-container,
-  .section3-container {
-    width: 80%;
-    height: 90%;
-    top: initial;
-    right: initial;
-    left: initial;
-    place-self: center;
-  }
-  .section3-container {
-    background-color: white;
-    color: black;
-  }
-  .section-container-img,
-  .section3-container-img {
-    width: 20%;
-  }
-  .section4 {
-    width: 100%;
-    height: 70vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(/assets/pricing3.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-  }
-  .section4-container {
-    width: 90%;
-    height: 90%;
-    left: initial;
-    top: initial;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-  }
-  .section4-container-heading {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .section4-container-paragraph {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  input[type="text"] {
-    padding: 0.5rem;
-    background-color: black;
-    margin: 0.5rem;
-  }
-  .section4-output {
-    margin: 0 0.5rem;
-    line-height: 1.2rem;
-  }
-  .section5 {
-    display: grid;
-    height: 650vh;
-  }
-  .section5-container1 {
-    width: 90%;
-    place-self: center;
-  }
-  .pricing {
-    width: 80%;
-    height: 70%;
-  }
-  .btn3 {
-    width: 90%;
-    font-size: 0.7rem;
-  }
-
-  footer {
-    width: 100%;
-    height: 200vh;
-    display: grid;
-  }
-  .footer-section1,
-  .footer-section2,
-  .footer-section3 {
-    place-self: center;
-    width: 90%;
-    height: 50%;
-  }
-  .footer-section1 h1 {
-    margin: 1rem 0;
-  }
-  .soical {
-    margin: 2rem 0;
-  }
-  .footer-section1 h3 {
-    margin: 1rem 0;
-    margin-top: 5rem;
-  }
-  .footer-section2 ul {
-    line-height: 2.5rem;
-    font-size: 1.2rem;
-  }
-}
-
-@media (orientation: portrait) and (max-width: 426px) {
-  .logo,
-  .main-topbg,
-  .section2-top1,
-  .section3-top1,
-  .section2-top1 {
-    display: none;
-  }
-  .main-top1 {
-    left: initial;
-    right: 6rem;
-    top: 3vmin;
-  }
-  .main-quote {
-    font-size: 1rem;
-    position: absolute;
-    left: initial;
-    right: 3rem;
-    top: 60vmin;
-  }
-  .section2,
-  .section3 {
-    display: grid;
-    height: 70vh;
-  }
-
-  .section-container,
-  .section3-container {
-    width: 65%;
-    height: 70%;
-    top: initial;
-    right: initial;
-    left: initial;
-    place-self: center;
-  }
-  .section4 {
-    width: 100%;
-    height: 55vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url(/assets/pricing3.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  .section4-container {
-    width: 90%;
-    height: 90%;
-    left: initial;
-    top: initial;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-  }
-  .section4-container-heading {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  .section4-container-paragraph {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-  input[type="text"] {
-    padding: 0.5rem;
-    background-color: black;
-    margin: 0.5rem;
-  }
-  .section4-output {
-    margin: 0 0.5rem;
-    line-height: 1.2rem;
-  }
-  .section5 {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 300vh;
-    gap: 1rem;
-  }
-  .section5-container1 {
-    width: 90%;
-    height: 70%;
-  }
-  .section5-img {
-    width: 100%;
-    height: 40%;
-  }
-  .pricing {
-    width: 90%;
-    height: 40%;
-    top: initial;
-  }
-  .btn3 {
-    margin-top: -1rem;
-    width: 90%;
-    font-size: 0.7rem;
-  }
-
-  footer {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-  }
-  .footer-section1,
-  .footer-section2,
-  .footer-section3 {
-    place-self: center;
-    width: 90%;
-    height: 50%;
-  }
-  .footer-section1 h1 {
-    margin: 1rem 0;
-  }
-  .soical {
-    margin: 2rem 0;
-  }
-  .footer-section1 h3 {
-    margin: 1rem 0;
-    margin-top: 5rem;
-  }
-  .footer-section2 ul {
-    line-height: 2.5rem;
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 1920px) {
-  .logo {
-    display: none;
-  }
-  .main-top1 {
-    zoom: 2;
-    right: 5vmin;
-    top: 3vmin;
-  }
-  .main-topbg {
-    zoom: 2;
-    right: 6rem;
-  }
-  .main-quote {
-    font-size: 4rem;
-    top: 22rem;
-  }
-  .btn1,.btn2 {
-    width: 30rem;
-    font-size: 2rem;
-  }
-  .section-container,.section3-container {
-    width: 30%;
-    top: 20rem;
-  }
-  .section-container-img,.section3-container-img {
-    width: 25%;
-    height: 20%;
-  }
-  .section-container-heading,.section3-container-heading {
-    font-size: 1.7rem;
-  }
-  .section-container-desc,.section3-container-desc{
-    font-size: 2rem;
-    font-weight: 100;
-  }
-  .section3-container{
-    background-color: white;
-    color: black;
-  }
-  .section3-top1{
-    zoom: 1.5;
-    right: 0rem;
-    bottom: 1rem;
-  }
-  .section4{
-    width: 100%;
-    height: 70vh;
-    background-size: cover;
-  }
-  .section4-container{
-    width: 60%;
-  }
-  .section4-container-heading {
-    padding: 1rem;
-    font-size: 6rem;
-  }
-  .section4-container-paragraph {
-    font-size: 3rem;
-    padding: 1rem;
-  }
-  .section4-output{
-    font-size: 2.5rem;
-    line-height:4rem;
-  }
-  input[type="text"] {
-    padding: 2rem;
-    background-color: transparent;
-    border: 2px solid grey;
-    margin: 1rem;
-    color: white;
-    font-size: 2rem;
-  }
-  .section5{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .section5-container1{
-    width: 30%;
-    height: 75%;
-  }
-  .pricing{
-    width: 80%;
-    height: 80%;
-  }
-  .pricing h1{
-    font-size:4rem
-  }
-  .pricing h3{
-    font-size: 2rem;
-  }
-  .pricing ul{
-    line-height: 4rem;
-    font-size: 2rem;
-  }
-  footer{
-    width: 100%;
-    height: 50vh;
-  }
-  .footer-section1,
-.footer-section2,
-.footer-section3 {
-  width: 30%;
-  height: 50%;
-}
-.footer-section1{
-  font-size: 2rem;
-}
-.footer-section1 h1{
-  margin:0 0 1rem 0;
-  font-size:4rem ;
-}
-.footer-section1 ul{
-  font-size: 2rem;
-}
-.footer-section2 ul {
-  line-height: 4rem;
-  font-size:2rem ;
-}
-} */

@@ -3,6 +3,8 @@ const calculate_bmi = document.querySelector(".btn2");
 const height = document.querySelector("#height");
 const output = document.querySelector(".section4-output");
 
+
+
 const bmi = (weightText, heightText) => {
     const sum = weightText / ((heightText / 100) ** 2); // Convert height to meters
     return sum.toFixed(2);
@@ -35,3 +37,7 @@ calculate_bmi.addEventListener("click", (e) => {
     }
         
 });
+
+document.querySelector('.section-container').addEventListener('click', function() {
+    window.location.href = '/exercises.html';
+  });
