@@ -2,6 +2,31 @@ let btn = document.querySelector(".btn");
 let container = document.querySelector(".container");
 const loading =document.querySelector(".loading")
 
+let btn1=document.querySelector(".next")
+let btn2=document.querySelector(".previous")
+let counter=document.querySelector(".counter")
+let count=1
+
+
+btn1.addEventListener(("click"),()=>{
+  ++count
+  console.log(count)
+  container.innerHTML=""
+  render()
+})
+
+btn2.addEventListener("click",()=>{
+  if(count>0){
+
+      --count
+      console.log(count)
+      
+          container.innerHTML=""
+          render()
+      
+  }
+})
+
 
 window.addEventListener("load", () => {
   let savedExercises = localStorage.getItem("exercises");
@@ -12,10 +37,10 @@ window.addEventListener("load", () => {
 });
 
 btn.addEventListener("click", async () => {
-  loading.style.display="block"
+ 
   let search = document.querySelector("#exercise-search");
   if (search.value.trim() !== "") {
-    const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${search.value}?limit=30`;
+    const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${search.value}?limit=5&skip=${skip}`;
 
     const options = {
       method: "GET",
@@ -41,6 +66,7 @@ btn.addEventListener("click", async () => {
 });
 
 let render = (result) => {
+  
   container.innerHTML = "";
   for (let i = 0; i < result.length; i++) {
     let content = document.createElement("div");

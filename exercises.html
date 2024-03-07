@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find Your Exercises</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
     <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
    
     <section class="section1">
+      <div class="logo">
+        <a href="/index.html"><img src="/assets/logo.png" alt=""></a>
+      </div>
       <div class="search-el">
         <select name="exercise" id="exercise-search">
           <option value="none">Filter Exercise</option>
@@ -29,16 +32,23 @@
 
       </div>
       <div class="exercises">
-        <div class="loading">
-         <img src="/assets/load-35_256.gif" alt="">
-        </div>
+        
         <div class="container">
+
         </div>
+      </div>
+      <div class="pagination">
+     <!-- HTML !-->
+<button class="button-30 previous" role="button">Prev</button>
+<div class="counter">1</div>
+<button class="button-30 next" role="button">Next</button>
+
       </div>
     </section>
 
 
    
-    <script src="script1.js"></script>
+    <!-- <script src="script1.js"></script> -->
+    <script src="newScript.js"></script>
   </body>
 </html>
