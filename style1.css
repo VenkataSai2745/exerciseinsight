@@ -12,13 +12,13 @@
 }
 .section1 {
   width: 100%;
-  height: 100vh;
-  background-image: url(/assets/background.jpg);
+  height: auto;
+  background-color: black;
   background-position: center;
   background-size: cover;
-  overflow-y: scroll;
+ 
   background-repeat: repeat-y;
-  margin-bottom: -10vh;
+  padding-bottom: 3rem;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -56,36 +56,33 @@ select option:checked {
   transition: all 0.3s;
 }
 
-.btn:hover {
-  /* border: 1px solid white; */
-}
+
 
 .exercises {
   margin-top: 1rem;
   display: grid;
   width: 100%;
-  /* min-height:500px; */
-  /* border: 2px solid white; */
+
 }
-.loading {
-  place-self: center;
-  display: none;
-  mix-blend-mode: multiply;
-  filter: invert(100);
-}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   gap: 2rem;
   justify-content: center;
-  height: auto;
+  align-items: center;
+  min-height:100vh ;
+  background-image: url(assets/page2.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   padding: 3rem 0;
 }
 
 .container>div{
   width: 20rem;
-  min-height: 25rem;
+ min-height: 33em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,11 +95,8 @@ select option:checked {
 .container>div>div{
 text-transform: capitalize;
   color: white;
-
-
 }
 .container h1{
-  
   padding: 1rem;
   font-size: 1.7rem;
     border-radius: 10px;
@@ -114,7 +108,6 @@ text-transform: capitalize;
   background-color: rgb(68, 182, 248);
 }
 .container p{
-  /* height: 2rem; */
   padding: 1rem;
   font-size: 1.2rem;
   border-radius: 10px;
@@ -130,7 +123,7 @@ text-transform: capitalize;
   border-radius: 10px;
 }
 
-/* CSS */
+
 .button-30 {
   align-items: center;
   appearance: none;
@@ -181,8 +174,7 @@ text-transform: capitalize;
   justify-content: center;
   display: none;
   margin-top: 1rem;
-  /* position: absolute;
-  bottom: 4rem; */
+ 
 }
 .counter{
   width: 3rem;
@@ -190,4 +182,38 @@ text-transform: capitalize;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #d5d3d3;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.footer-container,
+.footer-container2 {
+  width: 400px;
+  padding: 1rem;
+}
+.footer-container > * {
+  margin-bottom: 2rem;
+}
+
+.social ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0 2rem;
+  zoom: 1.2;
+}
+.social ul li:hover {
+  color: red;
+  cursor: pointer;
+}
+.footer-container2 ul li {
+  list-style: none;
+  line-height: 3rem;
 }

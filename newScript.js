@@ -30,20 +30,27 @@ btnPrev.addEventListener("click",()=>{
   }
 })
 
-
-
 window.addEventListener("load", () => {
   let savedExercises = localStorage.getItem("exercises");
+  let containerNotEmpty = localStorage.getItem("containerNotEmpty");
+
   if (savedExercises) {
     let exercises = JSON.parse(savedExercises);
     render(exercises);
   }
+
+  if (containerNotEmpty === "true") {
+    container.style.backgroundImage = "none";
+  }
 });
+  
 
 async function display(){
   let skip=4*(count-1)
   let search=searchValue.value
+
   pagination.style.display="flex";
+  
   container.innerHTML=""
 
   const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${search}?limit=4&offset=${skip}`;
@@ -59,8 +66,14 @@ try {
   const response = await fetch(url, options);
 	const result = await response.json();
   localStorage.setItem("exercises", JSON.stringify(result));
+  
   render(result)
-
+  if (container.innerHTML != "") {
+    container.style.backgroundImage = "none";
+    localStorage.setItem("containerNotEmpty", "true");
+  } else {
+    localStorage.setItem("containerNotEmpty", "false");
+  }
 
 } catch (error) {
 	console.error(error);
