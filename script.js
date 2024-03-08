@@ -41,3 +41,6 @@ calculate_bmi.addEventListener("click", (e) => {
 document.querySelector('.exercises').addEventListener('click', function() {
     window.location.href = '/exercises.html';
   })
+  document.querySelector('.nutrients').addEventListener('click', function() {
+    window.location.href = '/nutritionData.html';
+  })

@@ -8,25 +8,31 @@ let searchValue = document.querySelector("#exercise-search");
 let count = 1;
 
 
-btnSearch.addEventListener("click",()=>{
-
-  display()
+btnSearch.addEventListener("click", ()=>{
+  
+   display()
+  count=1
+  counter.innerText=count
 })
 
-btnNext.addEventListener("click",()=>{
+btnNext.addEventListener("click",async ()=>{
   ++count
+  btnNext.disabled = true;
+
   container.innerHTML=""
   console.log(count)
   counter.innerText=count
-  display()
+  await display()
+  btnNext.disabled = false; 
 })
-btnPrev.addEventListener("click",()=>{
+btnPrev.addEventListener("click",async ()=>{
   if(count>0){
     --count;
-    
+    btnNext.disabled = true;
     container.innerHTML=""
     counter.innerText=count
-    display()
+    await display()
+    btnNext.disabled = false; 
   }
 })
 
