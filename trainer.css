@@ -1,0 +1,197 @@
+
+.nav {
+    padding: 1rem;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+   display: inline-block;
+   width: 3rem;
+  }
+  .nav > .nav-header > .nav-title img {
+  width: 100%;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    font-size: 1.4rem;
+  
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #f24507;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  .nav-title div{
+    display: none;
+    color: white;
+  }
+  
+  
+  .trainer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    text-transform: capitalize;
+  }
+  .trainer h1{
+text-align: center;
+font-size: 2.4rem;
+
+  }
+  .trainer h2{
+    text-align: center;
+    font-size: 1rem;
+  }
+  .trainers-containers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    gap: 2rem;
+  }
+  .trainer-container{
+    text-align: center;
+    background-color: grey;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid rgb(236, 12, 12);
+    position: relative;
+  }
+  .trainer-container div{
+      position: absolute;
+      right: 50%;
+    bottom: 0;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+.trainer-container div h1{
+    color: black;
+}
+.trainer-container div p{
+    color: rgb(232, 3, 3);
+}
+.trainer-container:nth-child(1){
+    background-image: url(/assets/trainer1.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.trainer-container:nth-child(2){
+    background-image: url(/assets/trainer2.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}.trainer-container:nth-child(3){
+    background-image: url(/assets/trainer3.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}.trainer-container:nth-child(4){
+    background-image: url(/assets/trainer4.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav-title img{
+      display: none;
+    }
+    .nav-title div{
+        display: inline-block;
+        color: rgb(0, 0, 0);
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label>i{
+      display: block;
+      zoom: 1.3;
+     
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      padding-left: 1rem;
+      background-color: #010101;
+      height: 100px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 40px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  
+  @media (min-width:200px){
+    .trainers-containers{
+        padding: 1rem;
+    }
+    .trainer-container{
+        width: 200px;
+        height: 200px;
+        
+    }
+    .trainer-container div{
+        right: 0;
+        bottom: -20px;
+        padding-bottom: 0.2rem;
+    }
+  }

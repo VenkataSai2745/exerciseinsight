@@ -44,3 +44,7 @@ document.querySelector('.exercises').addEventListener('click', function() {
   document.querySelector('.nutrients').addEventListener('click', function() {
     window.location.href = '/nutritionData.html';
   })
+
+  document.querySelector('.trainers').addEventListener('click', function() {
+    window.location.href = '/trainer.html';
+  })
