@@ -497,13 +497,14 @@ footer {
       align-items: center;
     }
     .section4-container {
-      width: 350px;
+      width: 250px;
       height: 550px;
     }
     .pricing h1 {
       font-size: 1.5rem;
     }
   }
+
   @media (min-width: 460px) {
     .main-quote {
       font-size: 2rem;
@@ -703,6 +704,7 @@ footer {
       font-size: 1rem;
     }
   }
+  
   @media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -740,7 +742,7 @@ footer {
       height: 100px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
-      top: 60px;
+      top: 40px;
       left: 0px;
     }
     .nav > .nav-links > a {
