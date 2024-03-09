@@ -25,7 +25,9 @@ input[type="text"] {
   padding: 1rem 3rem;
   font-size: 1rem;
 }
-
+.errorMsg{
+    display: none;
+}
 .innercontainer {
   display: flex;
   gap: 1rem;

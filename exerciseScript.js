@@ -8,6 +8,7 @@ let searchValue = document.querySelector("#exercise-search");
 let count = 1;
 
 
+
 btnSearch.addEventListener("click", ()=>{
   
    display()

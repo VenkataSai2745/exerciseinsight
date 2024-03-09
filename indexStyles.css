@@ -7,11 +7,70 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  padding: 1rem;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+ display: inline-block;
+ width: 5rem;
+}
+.nav > .nav-header > .nav-title img {
+width: 100%;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  font-size: 1.4rem;
+
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #f24507;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+.nav-title div{
+  display: none;
+  color: white;
+}
+
+
+
 .section1 {
   border: 2px solid black;
   width: 100%;
   min-height: 100vh;
-  background-image: url(/assets/page1.jpeg);
+  background-image: url(/assets/page1_1.jpeg);
   background-position: left top;
   background-size: cover;
   position: relative;
@@ -67,7 +126,6 @@
   padding: 3rem;
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   justify-content: center;
   gap: 2rem;
   background-color: black;
@@ -118,7 +176,7 @@
   width: 100%;
   height: auto;
   padding: 5rem 3rem;
-  /* background-image: url(/assets/background4.jpg); */
+  background-image: url(/assets/background4_LE_auto_x2.jpg);
   background-color: black;
   background-position: right top;
   background-repeat: no-repeat;
@@ -233,7 +291,6 @@ input[type="text"] {
   position: relative;
   display: grid;
   background-color: white;
-  /* box-shadow: 5px 5px 10px rgb(107, 102, 102); */
 }
 .section4-img {
   width: 100%;
@@ -389,259 +446,313 @@ footer {
 /* media queries */
 
  @media (min-width: 220px) {
-  .section1{
-    text-align: center;
-    justify-content: center;
-  }
-  .main-quote {
-    font-size: 1.5rem;
-    backdrop-filter: blur(1px);
-    text-align: center;
-    padding: 1rem;
+    .section1{
+      text-align: center;
+      justify-content: center;
+    }
+    .main-quote {
+      font-size: 1.5rem;
+      backdrop-filter: blur(1px);
+      text-align: center;
+      padding: 1rem;
 
-    text-shadow: 1px 1px 5px black;
-  }
-  .section3 {
-    padding: 5rem 1rem;
-  }
-  .section3-container h1 {
-    font-size: 35px;
-  }
-  .section5 {
-    padding: 3rem 0;
-  }
-  .section5-heading h1,
-  .section2-top-heading h1,
-  .section4-top-heading h1 {
-    font-size: 3.5rem;
-  }
-  .section5-heading h3,
-  .section2-top-heading h3,
-  .section4-top-heading h3 {
-    font-size: 2rem;
-    top: -3rem;
-  }
-  .section5-img {
-    display: none;
-  }
-  .section5-desc {
-    width: 90%;
-    text-align: center;
-    font-size: 16px;
-  }
-  .section2 {
-    padding: 3rem 1rem;
-  }
+      text-shadow: 1px 1px 5px black;
+    }
+    .section3 {
+      padding: 5rem 1rem;
+    }
+    .section3-container h1 {
+      font-size: 35px;
+    }
+    .section5 {
+      padding: 3rem 0;
+    }
+    .section5-heading h1,
+    .section2-top-heading h1,
+    .section4-top-heading h1 {
+      font-size: 3.5rem;
+    }
+    .section5-heading h3,
+    .section2-top-heading h3,
+    .section4-top-heading h3 {
+      font-size: 2rem;
+      top: -3rem;
+    }
+    .section5-img {
+      display: none;
+    }
+    .section5-desc {
+      width: 90%;
+      text-align: center;
+      font-size: 16px;
+    }
+    .section2 {
+      padding: 3rem 1rem;
+    }
 
-  .section4 {
-    padding: 1rem;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+    .section4 {
+      padding: 1rem;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    .section4-container {
+      width: 350px;
+      height: 550px;
+    }
+    .pricing h1 {
+      font-size: 1.5rem;
+    }
   }
-  .section4-container {
-    width: 350px;
-    height: 550px;
+  @media (min-width: 460px) {
+    .main-quote {
+      font-size: 2rem;
+      backdrop-filter: blur(1px);
+      text-align: center;
+      padding: 1rem;
+      right: initial;
+      left: initial;
+      text-shadow: 1px 1px 5px black;
+    }
+    .section4-container {
+      width: 400px;
+      height: 550px;
+    }
+    .section5-heading h1,
+    .section2-top-heading h1,
+    .section4-top-heading h1 {
+      font-size: 4.5rem;
+    }
+    .section5-heading h3,
+    .section2-top-heading h3,
+    .section4-top-heading h3 {
+      font-size: 3rem;
+      top: -4rem;
+    }
+    .pricing h1 {
+      font-size: 1.5rem;
+    }
+    .pricing ul {
+      font-size: 1.2rem;
+    }
+    .price{
+      font-size: 0.2rem;
+    }
+    .price span{
+      font-size: 1.2rem;
+    }
   }
-  .pricing h1 {
-    font-size: 1.5rem;
+  @media (min-width: 858px) {
+    .main-quote{
+      font-size: 3rem;
+    }
+    .section4-container {
+      width: 350px;
+      height: 550px;
+    }
+    .section4 {
+      padding: 1rem;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .pricing h1 {
+      font-size: 1rem;
+    }
+    .pricing ul {
+      font-size: 1rem;
+    }
+    .section5 {
+      padding: 3rem;
+    }
+    .section5-container{
+      border: 2px solid yellow;
+    }
+    .section5-img {
+      width: 50%;
+      display: block;
+    }
+    .section5-img img{
+      height: 100%;
+    }
+    .section5-desc{
+      border: none;
+    }
   }
-}
-@media (min-width: 460px) {
-  .main-quote {
-    font-size: 2rem;
-    backdrop-filter: blur(1px);
-    text-align: center;
-    padding: 1rem;
-    right: initial;
-    left: initial;
-    text-shadow: 1px 1px 5px black;
+  @media (min-width: 1024px) {
+    .section2-container{
+      width: 17rem;
+      
+    }
+    .section5-container{
+      width: 50rem;
+      margin:0 auto ;
+    }
+    .section5-container{
+      border: none;
   }
-  .section4-container {
-    width: 400px;
-    height: 550px;
-  }
-  .section5-heading h1,
-  .section2-top-heading h1,
-  .section4-top-heading h1 {
-    font-size: 4.5rem;
-  }
-  .section5-heading h3,
-  .section2-top-heading h3,
-  .section4-top-heading h3 {
-    font-size: 3rem;
-    top: -4rem;
-  }
-  .pricing h1 {
-    font-size: 1.5rem;
-  }
-  .pricing ul {
-    font-size: 1.2rem;
-  }
-  .price{
-    font-size: 0.2rem;
-  }
-  .price span{
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 858px) {
-  .main-quote{
-    font-size: 3rem;
-  }
-  .section4-container {
-    width: 350px;
-    height: 550px;
-  }
-  .section4 {
-    padding: 1rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .pricing h1 {
+  .section5-desc{
     font-size: 1rem;
   }
-  .pricing ul {
-    font-size: 1rem;
   }
-  .section5 {
-    padding: 3rem;
+  @media (min-width: 1240px) {
+    .main-quote {
+      font-size: 3.5rem;
+    }
+    .section2-container{
+      width: 20rem;
+      
+    }
+    .section5-container{
+      width: 60rem;
+      margin:0 auto ;
+    }
+    .section5-desc{
+      font-size: 1.2rem;
+    }
+    .section5-heading h1,
+    .section2-top-heading h1,
+    .section4-top-heading h1 {
+      font-size: 5rem;
+    }
+    .section5-heading h3,
+    .section2-top-heading h3,
+    .section4-top-heading h3 {
+      font-size: 3.5rem;
+      top: -4.5rem;
+    }
   }
-  .section5-container{
-    border: 2px solid yellow;
-  }
-  .section5-img {
-    width: 50%;
-    display: block;
-  }
-  .section5-img img{
-    height: 100%;
-  }
-  .section5-desc{
-    border: none;
-  }
-}
-@media (min-width: 1024px) {
-  .section2-container{
-    width: 17rem;
-    
-  }
-  .section5-container{
-    width: 50rem;
-    margin:0 auto ;
-  }
-  .section5-container{
-    border: none;
-}
-.section5-desc{
-  font-size: 1rem;
-}
-}
-@media (min-width: 1240px) {
-  .main-quote {
-    font-size: 3.5rem;
-  }
-  .section2-container{
-    width: 20rem;
-    
-  }
-  .section5-container{
-    width: 60rem;
-    margin:0 auto ;
-  }
-  .section5-desc{
-    font-size: 1.2rem;
-  }
-  .section5-heading h1,
-  .section2-top-heading h1,
-  .section4-top-heading h1 {
-    font-size: 5rem;
-  }
-  .section5-heading h3,
-  .section2-top-heading h3,
-  .section4-top-heading h3 {
-    font-size: 3.5rem;
-    top: -4.5rem;
-  }
-}
-@media (min-width: 1440px) {
-  .main-quote {
-    font-size: 3rem;
-  }
-  .section5-container{
-    width: 60rem;
-    margin:0 auto ;
-  }
-  .section5-desc{
-    font-size: 1.2rem;
-  }
-  .section5-container{
-    width: 70rem;
-    margin:0 auto ;
-  }
-  .section2-container{
-    width: 25rem;
-  }
-} 
-@media (min-width: 1500px) {
-  .main-quote {
-    font-size: 3rem;
-  }
-  .section4 {
-    padding: 1rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-  .section4-container {
-    width: 20rem;
-    height: 550px;
-  }
-  .pricing {
-    place-self: center;
-    position: absolute;
-    bottom: 0;
-    width: 80%;
-    height: 70%;
-    background-color: white;
-    padding: 2rem;
-  }
-  .pricing h1 {
-    font-size: 2rem;
-  }
-  .pricing ul {
-    padding: 0;
-    font-size:1.2em;
-    list-style: none;
-    line-height: 2.2rem;
-  }
-  .section5-container{
-    width: 65rem;
-    margin:0 auto ;
-  }
-  .section5-img{
-    height: 60%;
-  }
-  .section5-desc{
-    font-size: 1.4rem;
-    text-align: left;
-  }
+  @media (min-width: 1440px) {
+    .main-quote {
+      font-size: 3rem;
+    }
+    .section5-container{
+      width: 60rem;
+      margin:0 auto ;
+    }
+    .section5-desc{
+      font-size: 1.2rem;
+    }
+    .section5-container{
+      width: 70rem;
+      margin:0 auto ;
+    }
+    .section2-container{
+      width: 25rem;
+    }
+  } 
+  @media (min-width: 1500px) {
+    .main-quote {
+      font-size: 3rem;
+    }
+  
+    .section4 {
+      padding: 1rem;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    .section4-container {
+      width: 20rem;
+      height: 550px;
+    }
+    .pricing {
+      place-self: center;
+      position: absolute;
+      bottom: 0;
+      width: 80%;
+      height: 70%;
+      background-color: white;
+      padding: 2rem;
+    }
+    .pricing h1 {
+      font-size: 2rem;
+    }
+    .pricing ul {
+      padding: 0;
+      font-size:1.2em;
+      list-style: none;
+      line-height: 2.2rem;
+    }
+    .section5-container{
+      width: 65rem;
+      margin:0 auto ;
+    }
+    .section5-img{
+      height: 60%;
+    }
+    .section5-desc{
+      font-size: 1.4rem;
+      text-align: left;
+    }
 
-  .footer-container {
-    width: 800px;
+    .footer-container {
+      width: 800px;
+    }
+    .social {
+      zoom: 1.2;
+    }
+    .footer-container h1,
+    .footer-container2 h1 {
+      font-size: 1.6rem;
+    }
+    .footer-container p,
+    h3,
+    .footer-container2 ul {
+      font-size: 1rem;
+    }
   }
-  .social {
-    zoom: 1.2;
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav-title img{
+      display: none;
+    }
+    .nav-title div{
+      display: inline-block;
+      color: white;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label>i{
+      display: block;
+      zoom: 1.3;
+     
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      padding-left: 1rem;
+      background-color: #010101;
+      height: 100px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 60px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
   }
-  .footer-container h1,
-  .footer-container2 h1 {
-    font-size: 1.6rem;
-  }
-  .footer-container p,
-  h3,
-  .footer-container2 ul {
-    font-size: 1rem;
-  }
-}
+  

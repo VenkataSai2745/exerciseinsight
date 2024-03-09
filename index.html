@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ExerciseInsight</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
-    <link rel="stylesheet" href="newStyle.css" />
+
+    <link rel="stylesheet" href="indexStyles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +23,32 @@
     />
   </head>
   <body>
-    <section class="main section1">
+
+
+
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          <img src="/assets/logo.png" alt="">
+          <div>ExerciseInsight</div>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </label>
+      </div>
+      
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about" >About</a>
+        <a href="#ourServices">Services</a>
+        <a href="#membership">Membership</a>
+        
+      </div>
+    </div>
+    <section class="main section1" id="home">
       <div class="main-quote">
         <h1>
           Don’t wish for a
@@ -32,7 +59,7 @@
       </div>
     </section>
 
-    <div class="section5">
+    <div class="section5" id="about">
       <div class="section5-heading">
         <h1>WHO WE ARE</h1>
         <h3>WHO WE ARE</h3>
@@ -57,7 +84,7 @@
       </div>
     </div>
 
-    <div class="section2-top-heading">
+    <div class="section2-top-heading" id="ourServices">
       <h1>WHAT WE HAVE</h1>
       <H3>WHAT WE HAVE</H3>
     </div>
@@ -135,7 +162,7 @@
       </div>
     </section>
 
-    <div class="section4-top-heading">
+    <div class="section4-top-heading" id="membership">
       <h1>MEMBERSHIP</h1>
       <H3>MEMBERSHIP</H3>
     </div>
@@ -217,6 +244,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="indexScript.js"></script>
   </body>
 </html>
